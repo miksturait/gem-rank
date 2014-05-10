@@ -1,0 +1,37 @@
+<%= form_for(@example_alt) do |f| %>
+  <% if @example_alt.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@example_alt.errors.count, "error") %> prohibited this example_alt from being saved:</h2>
+
+      <ul>
+      <% @example_alt.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :example_id %><br>
+    <%= f.text_field :example_id %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :votes %><br>
+    <%= f.number_field :votes %>
+  </div>
+  <div class="field">
+    <%= f.label :rank %><br>
+    <%= f.text_field :rank %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

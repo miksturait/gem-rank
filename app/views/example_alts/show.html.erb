@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @example_alt.user %>
+</p>
+
+<p>
+  <strong>Example:</strong>
+  <%= @example_alt.example %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @example_alt.description %>
+</p>
+
+<p>
+  <strong>Votes:</strong>
+  <%= @example_alt.votes %>
+</p>
+
+<p>
+  <strong>Rank:</strong>
+  <%= @example_alt.rank %>
+</p>
+
+<%= link_to 'Edit', edit_example_alt_path(@example_alt) %> |
+<%= link_to 'Back', example_alts_path %>

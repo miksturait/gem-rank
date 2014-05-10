@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :example_alts
+
   resources :examples
 
   # The priority is based upon order of creation: first created -> highest priority.
